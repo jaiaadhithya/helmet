@@ -10,28 +10,28 @@ graph TD
     classDef power fill:#FFF0F0,stroke:#FF4D4D,stroke-width:2px,color:#660000;
 
     %% Hardware Layer
-    A[Helmet Assembly]:::hardware --> B[MYOSA Mini IoT Board (ESP32)]:::hardware
-    B --> C[MPU6050 Sensor (Accel + Gyro)]:::hardware
-    B --> D[Buzzer / LED Indicator]:::hardware
-    B --> E[Battery + Charging Circuit]:::power
+    A["Helmet Assembly"]:::hardware --> B["MYOSA Mini IoT Board - ESP32"]:::hardware
+    B --> C["MPU6050 Sensor - Accelerometer & Gyroscope"]:::hardware
+    B --> D["Buzzer / LED Indicator"]:::hardware
+    B --> E["Battery + Charging Circuit"]:::power
 
     %% Communication Layer
-    B -->|Wi-Fi (MQTT / HTTP)| F[Cloud Server]:::comm
+    B -->|"Wi-Fi (MQTT / HTTP)"| F["Cloud Server"]:::comm
 
     %% Software Layer
-    F --> G[Python Processing Script]:::software
-    G --> H[Database (Firebase / MongoDB)]:::software
-    G --> I[Concussion Detection Algorithm]:::software
+    F --> G["Python Processing Script"]:::software
+    G --> H["Database - Firebase / MongoDB"]:::software
+    G --> I["Concussion Detection Algorithm"]:::software
 
     %% User Interface Layer
-    H --> J[Medic Dashboard / Mobile App]:::ui
-    J -->|Alert Notification| K[On-field Medic]:::ui
+    H --> J["Medic Dashboard / Mobile App"]:::ui
+    J -->|"Alert Notification"| K["On-field Medic"]:::ui
 
-    %% Legends
+    %% Legend
     subgraph Legend
-        L1[Hardware Components]:::hardware
-        L2[Communication Links]:::comm
-        L3[Software Modules]:::software
-        L4[User Interface]:::ui
-        L5[Power System]:::power
+        L1["Hardware Components"]:::hardware
+        L2["Communication Links"]:::comm
+        L3["Software Modules"]:::software
+        L4["User Interface"]:::ui
+        L5["Power System"]:::power
     end
