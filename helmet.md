@@ -1,7 +1,7 @@
 # Concussion Detection Helmet – Architecture Diagram
 
 ```mermaid
-graph TD
+graph LR
     %% Styling
     classDef hardware fill:#E6F7FF,stroke:#0099CC,stroke-width:2px,color:#003366;
     classDef software fill:#FFF5E6,stroke:#FF9933,stroke-width:2px,color:#663300;
@@ -26,6 +26,3 @@ graph TD
     %% User Interface Layer
     H --> J["Medic Dashboard / Mobile App"]:::ui
     J -->|"Alert Notification"| K["On-field Medic"]:::ui
-
-    end
-
