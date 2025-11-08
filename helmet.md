@@ -27,11 +27,5 @@ graph TD
     H --> J["Medic Dashboard / Mobile App"]:::ui
     J -->|"Alert Notification"| K["On-field Medic"]:::ui
 
-    %% Legend
-    subgraph Legend
-        L1["Hardware Components"]:::hardware
-        L2["Communication Links"]:::comm
-        L3["Software Modules"]:::software
-        L4["User Interface"]:::ui
-        L5["Power System"]:::power
     end
+
